@@ -1,4 +1,5 @@
 export default DS.Model.extend({
+  email: DS.attr('string'),
   symbol: DS.attr('string'),
   price: DS.attr('string')
 });

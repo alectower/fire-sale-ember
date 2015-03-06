@@ -1,0 +1,16 @@
+<section id="main">
+  <section class="row">
+    <section class="col-md-3"></section>
+    <section class="col-md-6">
+      <h2>Alerts</h2>
+      <br/>
+      {{#each alert in model}}
+        <section>
+          <h4>{{alert.symbol}}</h4>
+          Alert when price is below {{alert.price}}
+        </section>
+      {{/each}}
+    </section>
+    <section class="col-md-3"></section>
+  </section>
+</section>
