@@ -1,38 +1,47 @@
 <section id="main">
   <section class="row">
     <section class="col-md-2"></section>
-    <section class="col-md-4">
+    <section class="col-md-6">
       <h2>Alert me for the fire sale!</h2>
     </section>
+    <section class="col-md-4"></section>
   </section>
   <section class="row">
     <section class="col-md-2"></section>
-    <section class="col-md-4">
+    <section class="col-md-6">
       <br/>
       <table class="table table-striped">
         <thead>
           <tr>
             <th>Company Symbol</th>
             <th>Alert Price</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td>
+              {{input type="text" class="form-control" placeholder="Enter a stock symbol e.g. AAPL" value=symbol}}
+            </td>
+            <td>
+              {{input type="text" class="form-control" placeholder="Enter a stock alert price e.g. 90" value=price}}
+            </td>
+            <td>
+              <button type="submit" class="btn" {{action "addAlert"}}>Add Alert</button>
+            </td>
+          </tr>
           {{#each alert in model}}
             <tr>
               <td>{{alert.symbol}}</td>
-              <td>{{alert.price}}</td>
+              <td>${{alert.price}}</td>
+              <td></td>
             </tr>
           {{/each}}
         </tbody>
       </table>
       <br/>
     </section>
-    <section class="col-md-6">
-      <br/>
-      <br/>
-      <br/>
-      {{#link-to 'alerts.new'}}Add Alert{{/link-to}}
-      {{outlet}}
+    <section class="col-md-4">
     </section>
   </section>
 </section>
