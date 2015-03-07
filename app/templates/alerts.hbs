@@ -34,7 +34,9 @@
             <tr>
               <td>{{alert.symbol}}</td>
               <td>${{alert.price}}</td>
-              <td></td>
+              <td>
+                <button type="submit" class="btn" {{action "deleteAlert" alert}}>Delete Alert</button>
+              </td>
             </tr>
           {{/each}}
         </tbody>
