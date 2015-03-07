@@ -12,12 +12,14 @@ export default Ember.Controller.extend({
       var self = this;
       newAlert.save().then(function() {
         self.get('model').pushObject(newAlert);
-        self.transitionToRoute('alerts');
+        self.set('symbol', '');
+        self.set('price', '');
       });
     },
 
     deleteAlert: function(alertToDelete) {
       alertToDelete.destroyRecord();
+      this.get('model').removeObject(alertToDelete);
     }
   }
 });
