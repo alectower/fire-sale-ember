@@ -27,7 +27,7 @@
               {{input type="text" class="form-control" placeholder="Enter a stock alert price e.g. 90" value=price}}
             </td>
             <td>
-              <button type="submit" class="btn" {{action "addAlert"}}>Add Alert</button>
+              <button type="submit" class="btn btn-success" {{action "addAlert"}}>Add Alert</button>
             </td>
           </tr>
           {{#each alert in model}}
@@ -35,7 +35,7 @@
               <td>{{alert.symbol}}</td>
               <td>${{alert.price}}</td>
               <td>
-                <button type="submit" class="btn" {{action "deleteAlert" alert}}>Delete Alert</button>
+                <button type="submit" class="btn btn-danger" {{action "deleteAlert" alert}}>Delete Alert</button>
               </td>
             </tr>
           {{/each}}
