@@ -1,8 +1,13 @@
 <section id="main">
   <section class="row">
-    <section class="col-md-3"></section>
-    <section class="col-md-6">
+    <section class="col-md-2"></section>
+    <section class="col-md-4">
       <h2>Alert me for the fire sale!</h2>
+    </section>
+  </section>
+  <section class="row">
+    <section class="col-md-2"></section>
+    <section class="col-md-4">
       <br/>
       <table class="table table-striped">
         <thead>
@@ -21,20 +26,13 @@
         </tbody>
       </table>
       <br/>
-      <form>
-        <section class="input-group col-md-5">
-          <input type="text" class="form-control" placeholder="Enter a stock symbol e.g. AAPl"/>
-        </section>
-        <br/>
-        <section class="input-group col-md-5">
-          <input type="text" class="form-control" placeholder="Enter a stock alert price e.g. 90"/>
-        </section>
-        <br/>
-        <section class="input-group">
-          <button type="submit" class="btn" {{action "addAlert"}}>Add Alert</button>
-        </section>
-      </form>
     </section>
-    <section class="col-md-3"></section>
+    <section class="col-md-6">
+      <br/>
+      <br/>
+      <br/>
+      {{#link-to 'alerts.new'}}Add Alert{{/link-to}}
+      {{outlet}}
+    </section>
   </section>
 </section>
