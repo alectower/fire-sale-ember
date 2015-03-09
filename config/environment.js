@@ -43,5 +43,9 @@ module.exports = function(environment) {
 
   }
 
+  ENV['simple-auth'] = {
+    routeAfterAuthentication: 'alerts'
+  };
+
   return ENV;
 };
