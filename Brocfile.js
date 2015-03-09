@@ -6,7 +6,7 @@ var isProduction = ['production'].indexOf(env) > -1;
 
 var app = new EmberApp({
   fingerprint: {
-    prepend: 'https://s3.amazonaws.com/firesale-' + (isProduction ? 'prod' : 'dev')
+    prepend: 'https://s3.amazonaws.com/firesale-' + (isProduction ? 'prod' : 'dev') + '/'
   },
   minifyAssets: { enabled: true },
   minifyJS: { enabled: true }
