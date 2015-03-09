@@ -1,0 +1,12 @@
+<section class="row">
+  <section class="col-md-3 col-md-offset-1">
+    <form {{action 'authenticate' on='submit'}}>
+      <section class="input-group">
+        <label for="identification">Email</label>
+        {{input id="identification" value=identification placeholder='test@site.com' class='form-control'}}
+      </section>
+      <br/>
+      <button type="submit" class="btn">Sign In</button>
+    </form>
+  </section>
+</section>
