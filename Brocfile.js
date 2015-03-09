@@ -1,11 +1,15 @@
 /* global require, module */
 
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var env = EmberApp.env();
+var isProduction = ['production'].indexOf(env) > -1;
 
 var app = new EmberApp({
   fingerprint: {
-    prepend: 'https://s3.amazonaws.com/firesaleassets/'
-  }
+    prepend: 'https://s3.amazonaws.com/firesale-' + (isProduction ? 'prod' : 'dev')
+  },
+  minifyAssets: { enabled: isProduction },
+  minifyJS: { enabled: isProduction }
 });
 
 app.import('bower_components/bootstrap/dist/css/bootstrap.css')
