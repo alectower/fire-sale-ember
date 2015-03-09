@@ -38,7 +38,7 @@ module.exports = {
       password: process.env.REDIS_PASSWORD
     },
     assets: {
-      accessKeyId: process.env.AWS_ACCESS_KEY,
+      accessKeyId: process.env.AWS_ACCESS_ID,
       secretAccessKey: process.env.AWS_ACCESS_KEY,
       bucket: process.env.AWS_BUCKET
     }
