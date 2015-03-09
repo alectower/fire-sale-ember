@@ -10,9 +10,6 @@ module.exports = {
       port: 6379
     },
     assets: {
-      type: 's3', // default asset-adapter is 's3'
-      gzip: false, // if undefined or set to true, files are gziped
-      gzipExtensions: ['js', 'css', 'svg'], // if undefined, js, css & svg files are gziped
       accessKeyId: process.env.AWS_ACCESS_ID,
       secretAccessKey: process.env.AWS_ACCESS_KEY,
       bucket: 'firesale-dev'
