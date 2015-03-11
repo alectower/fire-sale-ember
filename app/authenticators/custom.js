@@ -13,16 +13,16 @@ export default Base.extend({
   },
 
   authenticate: function(options) {
-    return new Ember.RSVP.Promise(function(resolve, reject) {
+    return new Ember.RSVP.Promise(function(resolve) {
       Ember.run(function() {
         resolve({ userEmail: options.identification });
       });
-    })
+    });
   },
 
-  invalidate: function(data) {
+  invalidate: function() {
     return new Ember.RSVP.Promise(function(resolve) {
       resolve({ userEmail: null });
-    })
+    });
   }
 });

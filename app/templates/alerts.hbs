@@ -32,7 +32,7 @@
           </tr>
           {{#each alert in model}}
             <tr>
-              <td>{{alert.symbol}}</td>
+              <td><a {{bind-attr href='alert.symbolLink'}} target="_blank">{{alert.symbol}}</a></td>
               <td>${{alert.price}}</td>
               <td>
                 <button type="submit" class="btn btn-danger" {{action "deleteAlert" alert}}>Delete Alert</button>

@@ -8,8 +8,8 @@ var app = new EmberApp({
   fingerprint: {
     prepend: 'https://s3.amazonaws.com/firesale-' + (isProduction ? 'prod' : 'dev') + '/'
   },
-  minifyAssets: { enabled: true },
-  minifyJS: { enabled: true }
+  minifyAssets: { enabled: isProduction },
+  minifyJS: { enabled: isProduction }
 });
 
 app.import('bower_components/bootstrap/dist/css/bootstrap.css')
