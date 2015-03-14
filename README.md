@@ -1,4 +1,20 @@
-# Ember App
+#Fire Sale
+
+Front-end for Fire Sale
+
+Fire Sale is a stock alert app that sends the user an alert
+email once a stock has dropped below a given price.
+
+The ember app provides the UI for entering a stock symbol
+and stock price that will trigger an alert.
+
+Taking advantage of [ember-cli-deploy](https://github.com/achambers/ember-cli-deploy "Ember CLI Deploy),
+the front-end is decoupled from the back-end app, making
+it easier to try out different back-end implementations.
+
+[Rails back-end implementation](https://github.com/uniosx/fire-sale-rails "Fire Sale Rails App").
+
+# Ember App Setup
 
 Prereq: node
 
