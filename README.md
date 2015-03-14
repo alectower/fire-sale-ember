@@ -8,7 +8,7 @@ email once a stock has dropped below a given price.
 The ember app provides the UI for entering a stock symbol
 and stock price that will trigger an alert.
 
-Taking advantage of [ember-cli-deploy](https://github.com/achambers/ember-cli-deploy "Ember CLI Deploy),
+Taking advantage of [ember-cli-deploy](https://github.com/achambers/ember-cli-deploy "Ember CLI Deploy"),
 the front-end is decoupled from the back-end app, making
 it easier to try out different back-end implementations.
 
