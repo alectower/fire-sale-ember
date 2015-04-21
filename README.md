@@ -21,7 +21,7 @@ Prereq: node
 ```
 npm install -g ember-cli
 npm install -g bower
-cd ember
+cd fire-sale-ember
 ember install
 ember serve --proxy http://localhost:3000
 ```
@@ -36,7 +36,7 @@ If you get a 'File already exists' type error in the ember
 app, run the following:
 
 ```
-cd ember
+cd fire-sale-ember
 rm -rf bower_components node_modules tmp dist && npm cache clean
 ember install
 ```
